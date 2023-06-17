@@ -44,7 +44,7 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
-console.log("Hello, Micah.");
+
 
 /*-------------------------------------------------------*/
 
