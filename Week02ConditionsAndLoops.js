@@ -29,8 +29,8 @@
 
 /*-------------------------------------------------------*/
 
-console.log(`--------------------------
-Question 1: Driving the speed limit.. ? \n`);
+//console.log(`--------------------------
+//Question 1: Driving the speed limit.. ? \n`);
 
 /**
  * Step 1: Create two variables: speedLimit and mySpeed
@@ -44,12 +44,23 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
+ 
+let speedLimit = 50
+let mySpeed = 70
+if (mySpeed > speedLimit) {
+   console.log('Slow Down! Mom is Mad!');
+}else if (mySpeed == speedLimit) {
+   console.log('Everyone is Happy! ');
+}else if (mySpeed < speedLimit) {
+   console.log('Speed up!  Dad is mad!');
+}
+
 
 
 /*-------------------------------------------------------*/
 
-console.log(`--------------------------
-Question 2: Is it time to wake up for work? \n`);
+//console.log(`--------------------------
+//Question 2: Is it time to wake up for work? \n`);
 
 /**
  * Step 1: Create two variables, alarmSet and weekDay
@@ -63,7 +74,14 @@ Question 2: Is it time to wake up for work? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let alarmSet = true
+let weekDay = false
 
+if(alarmSet && weekDay) {
+   console.log("Sound Alarm! Time for work!" )
+}else {
+   console.log('I can sleep in!"')
+}
 
 /*-------------------------------------------------------*/
 
@@ -80,8 +98,15 @@ Question 3: Username & Password \n`);
  *	        - otherwise, print "Admin Access Denied"
  * 
  * ↓ YOUR CODE HERE ↓ */
+let userName = 'Micah123'
+let password = '12345'
 
-
+if (userName == 'Micah123' && password == '12345' || userName == 'Micah456' && password 
+== '6789') {
+   console.log('Admin Login Successful')
+}else {
+   console.log('Admin Access Denied')
+}
 
 /*-------------------------------------------------------*/
 
@@ -101,7 +126,55 @@ Question 4: Student Class \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let studentClass
+let studentGrade = 13
 
+if(studentGrade >= 0 && studentGrade <= 6){
+   studentClass = 'Elementary'
+}else if (studentGrade == 7 || studentGrade == 8){
+   studentClass = 'Middle'
+}else if (studentGrade == 9) {
+   studentClass = 'Freshman'
+}else if (studentGrade = 10 ){
+   studentClass = 'Sophmore'
+}else if (studentGrade = 11) {
+   studentClass = 'Junior' 
+}else if (studentGrade = 12) {
+   studentClass = 'Senior'
+}else {
+   console.log('Error')
+}
+
+switch(studentGrade) {
+   case 0:
+   case 1:
+   case 2:
+   case 3: 
+   case 4: 
+   case 5:
+   case 6: 
+    studentClass = 'Elementary'
+   break;
+   case 7: 
+   case 8:
+    studentClass = 'Middle'
+   break;
+   case 9:
+    studentClass = 'Freshman'
+   break;
+   case 10:
+    studentClass = 'Sophmore'
+   break;
+   case 11:
+    studentClass = 'Junior'
+   break;
+   case 12:
+    studentClass = 'Senior'
+   break;
+   default:
+   console.log("error")
+
+}
 
 /*-------------------------------------------------------*/
 
@@ -116,7 +189,22 @@ Question 5: Loops! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+for (let i = 10; i> -11; i--) {
+   console.log(i)
+}
 
+let counter = 1
+do {
+   console.log(counter)
+   counter ++
+}while (counter <= 50)
+
+do {
+   if(counter % 4 == 0 ){
+      console.log(counter)
+   }
+   counter ++
+}while (counter <= 50)
 
 /*-------------------------------------------------------*/
 
@@ -129,7 +217,9 @@ Question 6: Debugging an infinite loop! \n`);
  * Step 2: Uncomment out to test
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+for(let i = 0; i < 10; i++) {
+   console.log(i);
+}
    /*    
    for (let i = 11; i > 10; i++) { 
       console.log(i);   
